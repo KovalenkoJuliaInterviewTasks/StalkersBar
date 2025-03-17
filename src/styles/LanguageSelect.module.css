@@ -9,13 +9,10 @@
     cursor: pointer;
     border: 1px solid #ccc;
     padding: 10px;
-
 }
 
 .options-dropdown {
     display: none;
-
-
 }
 
 .options-dropdown.open {
@@ -31,6 +28,7 @@
 
 img {
     margin-right: 10px;
-    width: 30px;
+    width: 3vw;
+    height: 2vw;
 }
 

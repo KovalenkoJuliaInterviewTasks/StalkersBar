@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 
 function App()
 {
+    console.log("✅ App component is rendering!");
     return (
         <div className="App">
             <Header/>

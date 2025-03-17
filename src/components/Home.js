@@ -1,6 +1,10 @@
 import React from 'react';
 import {useSelector} from "react-redux";
-import {subtextEn, subtextHe, subtextRu, textEn, textHe, textRu} from "../utils/constants";
+import {
+    headerEn,
+    headerHe,
+    headerRu
+} from "../utils/constants";
 
 const Home = () =>
 {
@@ -8,22 +12,26 @@ const Home = () =>
 
     const getText = () =>{
         switch (lang){
-            case 'EN': return textEn;
-            case 'RU': return textRu;
-            case 'HE': return textHe;
+            case 'EN': return headerEn;
+            case 'RU': return headerRu;
+            case 'HE': return headerHe;
         }
     }
-    const getSubtext = () =>{
-        switch (lang){
-            case 'EN': return subtextEn;
-            case 'RU': return subtextRu;
-            case 'HE': return subtextHe;
-        }
-    }
+
     return (
-        <div>
-            <div className={'home'}>{getText()}</div>
-            <div className={'home little'}>{getSubtext()}</div>
+        <div style={{ display: "flex", alignItems: "center", flexDirection: lang === 'HE' ? 'row-reverse' : 'row'}}
+             dir={lang === 'HE' ? 'rtl' : 'ltr'}>
+             <div style={{ flex: 3, marginTop: '10px'}}>
+                <div className="home">{getText().text}</div>
+                <div className="home little">{getText().subtext}</div>
+            </div>
+            <div style={{margin: "10px", flex: 1 }}>
+                <img
+                    src={`/images/logo.png`}
+                    style={{ width: "100%", height: "auto", objectFit: "cover" }}
+                />
+            </div>
+
         </div>
     );
 };

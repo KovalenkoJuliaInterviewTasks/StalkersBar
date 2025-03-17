@@ -13,12 +13,14 @@ const Main = () =>
     return (
         <div className={'main'}>
             <Routes>
+                <Route index element={<Home/>}/>
                 <Route path={navItemsArray[0].route} element={<Home/>}/>
                 <Route path={navItemsArray[1].route} element={<Events/>}/>
                 <Route path={navItemsArray[2].route} element={<Menu/>}/>
                 <Route path={navItemsArray[3].route} element={<Gallery/>}/>
-                <Route path={navItemsArray[4].route} element={<Login/>}/>
-                <Route path={navItemsArray[5].route} element={<Logout/>}/>
+                {/*<Route path={navItemsArray[4].route} element={<Login/>}/>*/}
+                {/*<Route path={navItemsArray[5].route} element={<Logout/>}/>*/}
+                <Route path="*" element={<Home />} />
             </Routes>
         </div>
    );

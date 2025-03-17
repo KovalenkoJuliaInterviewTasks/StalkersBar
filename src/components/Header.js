@@ -2,17 +2,22 @@ import React from 'react';
 import Navigation from "./Navigation";
 import LanguageSelect from "./LanguageSelect";
 import {navItemsArray} from "../utils/constants";
-import styles from '../styles/Header.module.css'
+import styles from '../styles/HeaderFooter.module.css'
 
 const Header = () =>
 {
     return (
         <div className={`${styles['header']}`}>
-            <div className={'d-flex w-100'}>
+            <div className={'d-flex w-100 flex-row'}>
                 <Navigation items = {navItemsArray}/>
                 <LanguageSelect/>
             </div>
-            <header>Stalkers Bar</header>
+            <header>
+                <img
+                    src={`/images/logo.png`}
+                    style={{ width: "8%", height: "auto", objectFit: "cover" }}
+                />
+                Stalkers Social Club</header>
         </div>
     );
 };
