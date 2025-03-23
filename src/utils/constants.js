@@ -69,3 +69,7 @@ export const eventHE = 'הזמנת מקומות ב-0545574713 – רק בווצ�
     'אנא כבדו את האמנים, המארגנים ואת יתר האנשים המעוניינים להגיע לאירוע. אם אינכם יכולים להגיע או אם השתנה מספר המקומות שהזמנתם, אנא הודיעו לנו בצ\'אט של הווצאפ\n' +
     'נתראה ב StakerS';
 
+export const eventsCollection = 'events';
+export const foodCollection = 'food';
+export const barCollection = 'bar';
+export const albumCollection = 'albums'

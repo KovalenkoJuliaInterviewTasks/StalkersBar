@@ -8,7 +8,6 @@ import store from "./redux/storeConfiguration";
 import {BrowserRouter} from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-console.log("✅ index component is rendering!");
 root.render(
         <Provider store={store}>
             <BrowserRouter basename="/">

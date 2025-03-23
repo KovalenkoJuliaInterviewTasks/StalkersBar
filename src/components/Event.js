@@ -17,9 +17,17 @@ const Event = ({event, details, index}) => {
                 return 'he-IL';
         }
     }
-    const formatDate = (isoDate) => {
-        return new Date(isoDate).toLocaleDateString(getLocale(), {
-            day: 'numeric', month: 'long', year: 'numeric',
+    const formatDate = (date) => {
+        let dateObj;
+
+        if (date.seconds) {
+            dateObj = new Date(date.seconds * 1000);
+        } else {
+            dateObj = new Date(date);
+        }
+
+        return dateObj.toLocaleDateString(getLocale(), {
+            day: 'numeric', month: 'long', year: 'numeric'
         });
     }
     return (
