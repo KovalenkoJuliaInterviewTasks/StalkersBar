@@ -20,12 +20,12 @@ const Home = () =>
 
     return (
         <div style={{ display: "flex", alignItems: "center", flexDirection: lang === 'HE' ? 'row-reverse' : 'row'}}
-             dir={lang === 'HE' ? 'rtl' : 'ltr'} className="container" >
-             <div style={{ flex: 3, marginTop: '10px'}}  className="text-block">
+             dir={lang === 'HE' ? 'rtl' : 'ltr'}>
+            <div className={'text-box'}>
                 <div className="home">{getText().text}</div>
                 <div className="home little">{getText().subtext}</div>
             </div>
-            <div style={{margin: "10px", flex: 1 }} className="image-block">
+            <div className={'img-box'}>
                 <img
                     src={`/images/logo.png`}
                     style={{ width: "100%", height: "auto", objectFit: "cover" }}

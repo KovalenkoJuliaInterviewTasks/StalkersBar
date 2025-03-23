@@ -3,12 +3,12 @@ export const foodItems =
         {title: 'starter', titleEn: 'Starters', titleHe: 'תוספי מנוע', titleRu: 'Стартеры', items:
                 [{titleEn: 'Chips', titleRu: 'Чипс', titleHe: 'צ\'יפס', image: 'chips.jpg', cost1: 20},
                     {titleEn: 'Chips with cheese', titleRu: 'Чипс с сыром', titleHe: 'צ\'יפס עם גבינה',
-                        descRu: 'Брынза или пармезан', descEn: 'Bulgarian cheese or parmigiana', descHe: 'בולגרית ור פרמז\'אנו',
-                        image: 'chips.jpg', cost1: 25},
+                        descRu: 'Брынза или пармезан', descEn: 'Bulgarian cheese or parmigiana', descHe: 'בולגרית או פרמז\'אנו',
+                        image: 'chipsCheese.jpg', cost1: 25},
                     {titleEn: 'Chips with 2 cheeses', titleRu: 'Чипс с 2 сырами', titleHe: 'צ\'יפס עם 2 גבינות',
-                        image: 'chips.jpg', cost1: 25},
+                        image: 'chipsCheese.jpg', cost1: 25},
                    {titleEn: 'A well', titleRu: 'Колодец', titleHe: 'באר',
-                       descRu: 'Garlic rye toasts', descEn: 'Ржаные гренки с чесноком', descHe: 'קרוטונים מלחם שיפון עם שום',
+                       descRu: 'Ржаные гренки с чесноком', descEn: 'Garlic rye toasts', descHe: 'קרוטונים מלחם שיפון עם שום',
                        image: 'well.jpeg', cost1: 20},
                    {titleEn: 'Spikachki sausages', titleRu: 'Шпикачки', titleHe: 'נקנקיות שפיקאצ\'קי',
                         image: 'spikachki.jpg', cost1: 25},
@@ -240,7 +240,15 @@ export const events =
         }
     ];
 
-export const albums = [{
+export const albums = [
+    {
+        titleEn: 'DETECTIT',
+        titleRu: 'DETECTIT',
+        titleHe: 'DETECTIT',
+        date: '2025-03-14',
+        items: ['20.03.01.jpg', '20.03.02.jpg', '20.03.03.jpg', '20.03.04.jpg', '20.03.05.jpg', '20.03.06.jpg', '20.03.07.jpg', '20.03.08.jpg', '20.03.09.jpg', '20.03.10.jpg', '20.03.11.jpg', '20.03.12.jpg', '20.03.13.jpg', '20.03.14.jpg', '20.03.15.jpg', '20.03.16.jpg', '20.03.17.jpg', '20.03.18.jpg', '20.03.19.jpg', '20.03.20.jpg']
+    },
+    {
     titleEn: 'The Jockers',
     titleRu: 'The Jockers',
     titleHe: 'The Jockers',
