@@ -23,7 +23,7 @@ body{
   font-weight: bold;
   letter-spacing: 2px;
   text-align: justify;
-  display: flex;
+  display: inline-block;
   justify-content: center;
   align-items: center;
   width: 80%;
@@ -39,11 +39,30 @@ body{
 
 @media screen and (max-width: 500px)
 {
-  .home{
+  .home {
     font-size: 4vw;
-
+    display: inline-block; /* Даем тексту возможность обтекать */
+    width: auto;
   }
-  .little{
+
+  .little {
     font-size: 3vw;
+  }
+
+  /* Картинка теперь реально обтекаемая */
+  .image-block img {
+    width: 40%; /* Ограничиваем размер */
+    max-width: 150px;
+    float: right; /* Делаем картинку обтекаемой */
+    margin-left: 10px;
+  }
+
+  .text-block {
+    display: inline-block; /* Позволяем тексту быть рядом с картинкой */
+    width: 100%;
+  }
+
+  .container {
+    display: block; /* Отключаем flex на маленьких экранах */
   }
 }
