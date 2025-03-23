@@ -23,7 +23,7 @@ export const headerEn = {text: 'Welcome to “Stalkers Social Club”!\n' +
         ' • Great drinks and food: Everything you need to make your evening unforgettable.\n' +
         'It doesn’t matter how you get here — on two wheels, four, or on foot — we welcome everyone who shares our love for music and good times!\n' +
         'See you at “Stalkers Social Club”!',
-        subtext: 'We are waiting for you at Thursday and Friday from 20-00 until the last client at the address Beer-Sheva st. Beit Eshel 17'};
+        subtext: 'We are waiting for you at Thursday and Friday from 20-00 until 00-00 at the address Beer-Sheva st. Beit Eshel 17'};
 export const headerRu = {text: 'Добро пожаловать в “Stalkers Social Club”!\n' +
         'Здесь звучит музыка свободы, дружбы и отличного настроения. Мы — место для всех, кто ценит яркие вечера, живую музыку и душевную атмосферу.\n' +
         'В “Stalkers Social Club” вас ждут:\n' +
@@ -31,7 +31,7 @@ export const headerRu = {text: 'Добро пожаловать в “Stalkers S
         ' • Уютная атмосфера: тепло и душевность, где каждый почувствует себя своим.\n' +
         ' • Отличные напитки и еда: всё, чтобы ваш вечер стал незабываемым.\n' +
         'Не важно, на чём вы приехали — на двух колёсах, четырёх или пешком, — мы рады каждому гостю, кто готов разделить с нами любовь к музыке и хорошему время препровождению! До встречи в “Stalkers Social Club”!',
-    subtext: 'Мы ждем вас в четверг и пятницу c 20-00 до последнего клиента по адресу г.Беэр-Шева ул. Бейт Эшель 17'};
+    subtext: 'Мы ждем вас в четверг и пятницу c 20-00 до 00-00 по адресу г.Беэр-Шева ул. Бейт Эшель 17'};
 export const headerHe = {text: 'ברוכים הבאים ל "Stalkers Social Club"\n' +
         ' כאן מארחים אותכם צלילי החופש, חברות ומצב רוח נהדר.  אנחנו מקום לכל מי שאוהב ערבים תוססים, מוזיקה חיה ואווירה נעימה.\n' +
         ' ב-"Stalkers Social Club", תמצאו:\n' +
@@ -39,19 +39,19 @@ export const headerHe = {text: 'ברוכים הבאים ל "Stalkers Social Club
         '   • אווירה מסבירת פנים: חום ותחושת שייכות לכל אורח.\n' +
         '   • משקאות ואוכל נהדרים: כל מה שאתה צריך כדי להפוך את הערב שלך לבלתי נשכח.\n' +
         ' לא משנה איך תגיעו לכאן - על שני גלגלים, על ארבעה, או רגלי - אנו מברכים את כל מי שחולק את האהבה שלנו למוזיקה ולבילוי טוב!',
-    subtext: 'מחכים לכם בימים חמישי ושישי בין השעות 20-00 עד אחרון הלקוח בכתובת באר שבע.'};
+    subtext: 'מחכים לכם בימים חמישי ושישי בין השעות 20-00 עד 00-00 בכתובת באר שבע.'};
 
 export const footerEn = {address: 'Address: Beer-Sheva, Beit Eshel 17',
     phone: 'Phone: 054-557-4713',
-    work: 'Opening hours: at Thursday and Friday from 20-00 until the last client',
+    work: 'Opening hours: at Thursday and Friday from 20-00 until 00-00',
     copyright: 'All materials belong to StalkersSocialClub and their legal authors. When quoting, a link to the site is required.'};
 export const footerRu = {address: 'Наш адрес: г. Беэр-Шева, ул. Бейт Эшель 17',
                             phone: 'Телефон: 054-557-4713',
-                            work: 'График работы: четверг и пятница с 20-00 до последнего клиента',
+                            work: 'График работы: четверг и пятница с 20-00 до 00-00',
                             copyright: 'Все материалы принадлежат «StalkersSocialClub» и их законным авторам. При цитировании ссылка на сайт обязательна.'};
 export const footerHe = {address: 'כתובתנו: באר שבע, רח\' בית אשל 17',
     phone: 'טלפון: 054-557-4713',
-    work: 'שעות פתיחה: בימים חמישי ושישי בין השעות 20-00 עד אחרון הלקוח',
+    work: 'שעות פתיחה: בימים חמישי ושישי בין השעות 20-00 עד 00-00',
     copyright: 'כל החומרים שייכים ל-StalkersSocialClub ולמחברים המשפטיים שלהם. בעת הצעת מחיר יש צורך בקישור לאתר'};
 
 export const eventRu = 'Бронирование мест 0545574713 - только WhatsApp!!!\n Укажите ваше имя, дату и название мероприятия, а так же количество мест.\n' +

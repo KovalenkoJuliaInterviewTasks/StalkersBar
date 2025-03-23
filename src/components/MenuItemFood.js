@@ -37,7 +37,7 @@ const MenuItemBar = ({item}) => {
                     <CardMedia
                         sx={{
                             width: "100%",
-                            height: "15vw", // Можно задать фиксированную высоту
+                            height: "15vw",
                         }} image={`/images/${item.image}`}/>
                     <CardContent sx={{textAlign: 'center', backgroundColor: '#2C2C2C', color: "white", padding: 0, width: "100%"}}>
                         <Typography gutterBottom sx={{fontSize: '2vw'}}>

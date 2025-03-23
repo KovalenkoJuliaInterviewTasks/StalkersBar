@@ -1,18 +1,16 @@
 export const foodItems =
     [
         {title: 'starter', titleEn: 'Starters', titleHe: 'תוספי מנוע', titleRu: 'Стартеры', items:
-                [{titleEn: 'Chips', titleRu: 'Чипсы', titleHe: 'צ\'יפס', image: 'chips.jpg', cost1: 20},
-                    {titleEn: 'Chips with cheese', titleRu: 'Чипсы с сыром', titleHe: 'צ\'יפס עם גבינה',
+                [{titleEn: 'Chips', titleRu: 'Чипс', titleHe: 'צ\'יפס', image: 'chips.jpg', cost1: 20},
+                    {titleEn: 'Chips with cheese', titleRu: 'Чипс с сыром', titleHe: 'צ\'יפס עם גבינה',
+                        descRu: 'Брынза или пармезан', descEn: 'Bulgarian cheese or parmigiana', descHe: 'בולגרית ור פרמז\'אנו',
                         image: 'chips.jpg', cost1: 25},
-                    {titleEn: 'Chips with 2 cheeses', titleRu: 'Чипсы с 2 сырами', titleHe: 'צ\'יפס עם 2 גבינות',
+                    {titleEn: 'Chips with 2 cheeses', titleRu: 'Чипс с 2 сырами', titleHe: 'צ\'יפס עם 2 גבינות',
                         image: 'chips.jpg', cost1: 25},
-                    {titleEn: 'Bulgarian cheese or parmigiana', titleRu: 'Брынза или пармезан', titleHe: 'בולגרית ור פרמז\'אנו',
-                        image: 'cheese.jpg', cost1: 20},
-                    {titleEn: 'A well', titleRu: 'Колодец', titleHe: 'באר',
-                        image: 'well.jpeg', cost1: 20},
-                    {titleEn: 'Garlic rye toasts', titleRu: 'Ржаные гренки с чесноком', titleHe: 'קרוטונים מלחם שיפון עם שום',
-                        image: 'garlic_toast.jpg', cost1: 20},
-                    {titleEn: 'Spikachki sausages', titleRu: 'Шпикачки', titleHe: 'נקנקיות שפיקאצ\'קי',
+                   {titleEn: 'A well', titleRu: 'Колодец', titleHe: 'באר',
+                       descRu: 'Garlic rye toasts', descEn: 'Ржаные гренки с чесноком', descHe: 'קרוטונים מלחם שיפון עם שום',
+                       image: 'well.jpeg', cost1: 20},
+                   {titleEn: 'Spikachki sausages', titleRu: 'Шпикачки', titleHe: 'נקנקיות שפיקאצ\'קי',
                         image: 'spikachki.jpg', cost1: 25},
                     {titleEn: 'Onion rings', titleRu: 'Луковые кольца', titleHe: 'טבעות בצל',
                         image: 'onion_ring.jpg', cost1: 25},
@@ -28,7 +26,7 @@ export const foodItems =
                         image: 'fish_chips.jpg', cost1: 60}]
         },
         {title: 'ground', titleEn: 'Ground Fuel', titleHe: 'דלק יבשתי', titleRu: 'Наземное топливо', items:
-                [{titleEn: 'Schnitzel + Chips + Salad', titleRu: 'Шницель + Чикс + Салат', titleHe: 'שניצל + צ\'יפס + סלט',
+                [{titleEn: 'Schnitzel + Chips + Salad', titleRu: 'Шницель + Чипс + Салат', titleHe: 'שניצל + צ\'יפס + סלט',
                     image: 'shnitzel_chips_salad.jpg', cost1: 60},
                     {titleEn: 'Frankfurters + Chips + Sauerkraut', titleRu: 'Колбаски + Чипс + Квашеная капуста',
                         titleHe: 'פראנקוורסט + צ\'יפס + כרוב כבוש', image: 'sausage_chips_cabbage.jpg', cost1: 90}]
@@ -36,6 +34,28 @@ export const foodItems =
     ];
 export const barItems =
     [
+        {title: 'cooling', titleEn: 'Cooling agents', titleHe: 'קררים', titleRu: 'Хладогенты'},
+        {title: 'draft', titleEn: 'Draft', titleHe: 'חבית', titleRu: 'Бочка', items:
+                [{titleEn: 'Budvar dark czech lager', titleRu: 'Будвар чешское темное', titleHe: 'בודבר ציכית כהה',
+                    image: 'blackbeer.jpg', cost1: 20, cost2: 30, cap1: '1/3 L', cap2: '1/2 L'},
+                    {titleEn: 'Krusovice czech lager', titleRu: 'Крушовице светлое', titleHe: 'קרושוביצה צ\'כית בהירה',
+                        image: 'whitebeer.jfif', cost1: 20, cost2: 30, cap1: '1/3 L', cap2: '1/2 L'},
+                    {titleEn: 'Blanche belgian wheat', titleRu: 'Бланш бельгийское пшеничное', titleHe: 'בלאנש בלגית חיטה',
+                        image: 'blanche.jfif', cost1: 20, cost2: 30, cap1: '1/3 L', cap2: '1/2 L'},
+                    {titleEn: 'Magners irish cider', titleRu: 'Магнерс ирландский сидр', titleHe: 'מגנרס סיידר אירי',
+                        image: 'sidr.jfif', cost1: 30, cost2: 40, cap1: '1/3 L', cap2: '1/2 L'}]
+        },
+        {title: 'bottled', titleEn: 'Bottled', titleHe: 'בקבוק', titleRu: 'Бутылка', items:
+                [{titleEn: 'Goldstar', titleRu: 'Голдстар', titleHe: 'גולדסטר', image: 'goldstar.jfif',
+                    cost1: 20, cap1: '1/3 L'},
+                    {titleEn: 'Haineken', titleRu: 'Хайникен', titleHe: 'חייניקן', image: 'heineken.jfif',
+                        cost1: 20, cap1: '1/3 L'},
+                    {titleEn: 'Corona', titleRu: 'Корона', titleHe: 'קורונה', image: 'corona.jfif',
+                        cost1: 20, cap1: '1/3 L'},
+                    {titleEn: 'Leffe', titleRu: 'Леф', titleHe: 'לף', image: 'leffe.jfif', cost1: 30, cap1: '1/3 L'},
+                    {titleEn: 'Kasteel', titleRu: 'Кастиль', titleHe: 'קסטיל', image: 'kasteel.jfif',
+                        cost1: 40, cap1: '1/3 L'}]
+        },
         {title: 'fuel', titleEn: 'Fuel', titleHe: 'תוספי מנוע', titleRu: 'Топливо'},
         {title: 'whiskey', titleEn: 'Whiskey', titleHe: 'ויסקי', titleRu: 'Виски', items:
                 [{titleEn: 'Jameson', titleRu: 'Джеймсон', titleHe: 'ג\'ימסון', image: 'jameson.jpg',
@@ -60,7 +80,7 @@ export const barItems =
         {title: 'rum', titleEn: 'Rum', titleHe: 'רום', titleRu: 'Ром', items:
                 [{titleEn: 'Baccardi', titleRu: 'Бакарди', titleHe: 'בקרד', image: 'bacardi.jpg',
                     cost1: 15, cost2: 25, cap1: '30ml', cap2: '50ml'},
-                    {titleEn: 'Captan Morgan', titleRu: 'Капитан Морган', titleHe: 'קפטן מורגן', image: 'captain.jfif',
+                    {titleEn: 'Captain Morgan', titleRu: 'Капитан Морган', titleHe: 'קפטן מורגן', image: 'captain.jfif',
                         cost1: 25, cost2: 40, cap1: '30ml', cap2: '50ml'}]
         },
         {title: 'cognac', titleEn: 'Cognac', titleHe: 'קוניאק', titleRu: 'Коньяк', items:
@@ -96,15 +116,15 @@ export const barItems =
                     cost1: 15, cost2: 25, cap1: '30ml', cap2: '50ml'}]
         },
         {title: 'mix', titleEn: 'Fuel Mixture', titleHe: 'תערובות בעירה', titleRu: 'Топливные смеси'},
-        {title: '2 component mixture', titleEn: '2-ч компонентные смеси', titleHe: 'תערובת של 2', titleRu: 'Виски', items:
-                [{titleEn: 'Wiskey-Cola', titleRu: 'Виски-Кола', titleHe: 'ויסקי-קולה', image: 'wiskey_cola.jpg',
+        {title: 'mixture', titleEn: '2 component mixture', titleHe: 'תערובת של 2', titleRu: '2-х компонентные смеси', items:
+                [{titleEn: 'Whiskey-Cola', titleRu: 'Виски-Кола', titleHe: 'ויסקי-קולה', image: 'wiskey_cola.jpg',
                     cost1: 35
                 },
                     {titleEn: 'Rum-Cola', titleRu: 'Ром-Кола', titleHe: 'רום-קולה', image: 'rom_cola.jfif', cost1: 35},
                     {titleEn: 'Vodka-XL', titleRu: 'Водка-XL', titleHe: 'וודקה-אקסל', image: 'vodkaXL.jfif', cost1: 35},
                     {titleEn: 'Gin-Tonic', titleRu: 'Джин-Тоник', titleHe: 'ג\'ין-טוניק', image: 'jin_tonic.jpg', cost1: 35},
                     {titleEn: 'Screwdriver', titleRu: 'Отвертка', titleHe: 'מברג', image: 'otvertka.jfif', cost1: 35},
-                    {titleEn: 'Vodka-Cranberies', titleRu: 'Водка-Клюква', titleHe: 'וודקה-חמוציות', image: 'vodka_klyuk.jfif', cost1: 35}]
+                    {titleEn: 'Vodka-Cranberries', titleRu: 'Водка-Клюква', titleHe: 'וודקה-חמוציות', image: 'vodka_klyuk.jfif', cost1: 35}]
         },
         {title: 'dot', titleEn: 'DOT 4', titleHe: 'דוט 4', titleRu: 'ДОТ 4', items:
                 [{titleEn: 'Martini Bianco', titleRu: 'Мартини Бианко', titleHe: 'מרטיני ביאנקו',
@@ -119,108 +139,18 @@ export const barItems =
                         cost1: 30},
                     {titleEn: 'White wine', titleRu: 'Белое Вино', titleHe: 'יין לבן', image: 'whiteWine.jfif',
                         cost1: 30},
-                    {titleEn: 'Apperol-shpitz', titleRu: 'Аппероль-Шприц', titleHe: 'אפרול-שפריץ', image: 'apperol_shpitz.jfif',
+                    {titleEn: 'Apperol-shpritz', titleRu: 'Аппероль-Шприц', titleHe: 'אפרול-שפריץ', image: 'apperol_shpitz.jfif',
                         cost1: 30},
                     {titleEn: 'Campari', titleRu: 'Кампари', titleHe: 'קמפארי', image: 'campari.jfif', cost1: 50},
                     {titleEn: 'Soft drinks', titleRu: 'Легкие напитки', titleHe: 'שתיה קלה', image: 'juice.jpg',
                         cost1: 10},
                     {titleEn: 'Espresso', titleRu: 'Эспрессо', titleHe: 'אספרסו', image: 'espresso.jfif', cost1: 10}]
-        },
-        {title: 'Cooling', titleEn: 'Cooling agents', titleHe: 'קררים', titleRu: 'Хладогенты'},
-        {title: 'Draft', titleEn: 'Draft', titleHe: 'חבית', titleRu: 'Бочка', items:
-                [{titleEn: 'Budvar dark czech lager', titleRu: 'Будвар чешское темное', titleHe: 'בודבר ציכית כהה',
-                    image: 'blackbeer.jpg', cost1: 20, cost2: 30, cap1: '1/3 L', cap2: '1/2 L'},
-                    {titleEn: 'Krusovice czech lager', titleRu: 'Крушовице светлое', titleHe: 'קרושוביצה צ\'כית בהירה',
-                        image: 'whitebeer.jfif', cost1: 20, cost2: 30, cap1: '1/3 L', cap2: '1/2 L'},
-                    {titleEn: 'Blanche belgian wheat', titleRu: 'Бланш бельгийское пшеничное', titleHe: 'בלאנש בלגית חיטה',
-                        image: 'blanche.jfif', cost1: 20, cost2: 30, cap1: '1/3 L', cap2: '1/2 L'},
-                    {titleEn: 'Magners irish cider', titleRu: 'Магнерс ирландский сидр', titleHe: 'מגנרס סיידר אירי',
-                        image: 'sidr.jfif', cost1: 30, cost2: 40, cap1: '1/3 L', cap2: '1/2 L'}]
-        },
-        {title: 'Bottled', titleEn: 'Bottled', titleHe: 'בקבוק', titleRu: 'Бутылка', items:
-                [{titleEn: 'Goldstar', titleRu: 'Голдстар', titleHe: 'גולדסטר', image: 'goldstar.jfif',
-                    cost1: 20, cap1: '1/3 L'},
-                    {titleEn: 'Haineken', titleRu: 'Хайникен', titleHe: 'חייניקן', image: 'heineken.jfif',
-                        cost1: 20, cap1: '1/3 L'},
-                    {titleEn: 'Corona', titleRu: 'Корона', titleHe: 'קורונה', image: 'corona.jfif',
-                        cost1: 20, cap1: '1/3 L'},
-                    {titleEn: 'Leffe', titleRu: 'Леф', titleHe: 'לף', image: 'leffe.jfif', cost1: 30, cap1: '1/3 L'},
-                    {titleEn: 'Kasteel', titleRu: 'Кастиль', titleHe: 'קסטיל', image: 'kasteel.jfif',
-                        cost1: 40, cap1: '1/3 L'}]
         }
     ];
 
 export const events =
     [
-        {
-            title: 'Dish to Dish', image: 'dish_to_dish.jpg',
-            descRu: 'Dish to Dish – это ансамбль музыкантов-виртуозов, объединённых любовью к балканским ритмам. В их исполнении звучат страстные мелодии Восточной Европы, чарующие цыганские мотивы и зажигательные танцевальные ритмы, от которых невозможно устоять!\n' +
-                '🎸 Гитара: Тимур Ибатуллин\n' +
-                '🎻 Скрипка, вокал: Наталья Жеренкова\n' +
-                '🥁 Барабаны: Григорий Перельман\n' +
-                '🎷🎹 Клавиши, саксофон, EMEO: Евгений Штейнберг\n' +
-                'Каждое их выступление – это вихрь эмоций, виртуозности и музыкальной магии. Приходите на концерты Dish to Dish, чтобы погрузиться в атмосферу свободы, радости и праздника!',
-            descEn: 'Dish to Dish is an ensemble of virtuoso musicians united by their love for Balkan rhythms. Their performances feature passionate melodies from Eastern Europe, enchanting gypsy motifs, and fiery dance rhythms that make it impossible to stay still!\n' +
-                '🎸 Guitar: Timur Ibatullin\n' +
-                '🎻 Violin, Vocals: Natalia Zherenkova\n' +
-                '🥁 Drums: Grigory Perelman\n' +
-                '🎷🎹 Keys, Saxophone, EMEO: Evgeny Shteinberg\n' +
-                'Each of their performances is a whirlwind of emotions, virtuosity, and musical magic. Come to a Dish to Dish concert and immerse yourself in an atmosphere of freedom, joy, and celebration!',
-            descHe: 'Dish to Dish הוא אנסמבל של מוזיקאים-וירטואוזים, המאוחדים באהבתם לקצב הבלקני. במוזיקה שלהם נשמעות מנגינות נלהבות ממזרח אירופה, מוטיבים צועניים מהפנטים וקצבים סוחפים שאי אפשר להישאר אדישים אליהם!\n' +
-                '🎸 גיטרה: טימור איבאטולין\n' +
-                '🎻 כינור, שירה: נטאליה ז\'רנקובה\n' +
-                '🥁 תופים: גריגורי פרלמן\n' +
-                '🎷🎹 קלידים, סקסופון, EMEO: יבגני שטיינברג\n' +
-                'כל הופעה של Dish to Dish היא מערבולת של רגש, וירטואוזיות וקסם מוזיקלי. בואו להופעות שלהם כדי להרגיש את הקצב של החופש, השמחה והחגיגה! ',
-            date: '2025-03-20',
-            open: '20:00',
-            start: '21:00',
-            price: 70
-        },
-        {
-            title: 'Cheeers Band', image: 'cheeers_band.jpg',
-            descRu: 'CHEEERS – ВЗРЫВНАЯ ЭНЕРГИЯ РОКА!\n' +
-                'Музыкальная группа Cheeers – это мощный заряд энергии, драйва и живого звука! Мы создаем настоящие музыкальные шоу, которые заставляют сердца биться быстрее, а танцпол – гореть.\n' +
-                'В ПРОГРАММЕ:\n' +
-                '🔥 Rock live show – яркое и мощное выступление, где звучат легендарные хиты, заставляющие зал петь в унисон. Виртуозные соло, плотный ритм и неподражаемый вокал – это шоу, которое нельзя пропустить!\n' +
-                'СОСТАВ ГРУППЫ CHEEERS:\n' +
-                '🎤 Арина Лейзер – вокал, харизма и мощный голос, который невозможно забыть!\n' +
-                '🥁 Вилли Маркус – барабаны, задающие ритм каждому сердцебиению в зале.\n' +
-                '🎸 Арик Лейзер – бас, создающий глубокие вибрации, от которых невозможно устоять.\n' +
-                '🎸 Игаль Шафир – гитара, виртуозные соло и взрывной звук.\n' +
-                '🎸 Михаил Лейзерзон – гитара, энергия и мелодичность, от которых мурашки по коже.\n' +
-                'Мы – Cheeers, и мы здесь, чтобы взорвать сцену и подарить вам незабываемые эмоции! Готовьтесь к вечеру, который вы будете вспоминать снова и снова!',
-            descEn: 'CHEEERS – EXPLOSIVE ROCK ENERGY!\n' +
-                'Music band Cheeers is a powerful charge of energy, drive, and live sound! We create real musical shows that make hearts beat faster and the dance floor burn.\n' +
-                '\n' +
-                'PROGRAM:\n' +
-                '🔥 Rock live show – a bright and powerful performance featuring legendary hits that make the audience sing in unison. Virtuoso solos, tight rhythm, and unique vocals – this is a show you cannot miss!\n' +
-                '\n' +
-                'CHEEERS BAND MEMBERS:\n' +
-                '🎤 Arina Leizer – vocals, charisma, and a powerful voice that is impossible to forget!\n' +
-                '🥁 Willy Marcus – drums, setting the rhythm for every heartbeat in the hall.\n' +
-                '🎸 Arik Leizer – bass, creating deep vibrations that are impossible to resist.\n' +
-                '🎸 Igal Shafir – guitar, virtuoso solos, and an explosive sound.\n' +
-                '🎸 Mikhail Leizerzon – guitar, energy and melody that give goosebumps.\n' +
-                '\n' +
-                'We are Cheeers, and we are here to blow up the stage and give you unforgettable emotions! Get ready for a night you will remember again and again!',
-            descHe: 'Cheeers - אנרגיית רוק נפיצה\n' +
-                'היא מטען עוצמתי של אנרגיה, דרייב וסאונד חי! אנחנו יוצרים מופעי מוזיקה אמיתיים שגורמים ללבבות לפעום מהר יותר ולרחבת הריקודים לבעור.\n' +
-                'בתוכנית:\n' +
-                '🔥 מופע חי רוק - הופעה מבריקה ועוצמתית, בה מושמעים להיטים אגדיים, שגורמים לקהל לשיר ביחד. סולואים וירטואוזיים, קצב מהודק ושירה שאין לה חיקוי - זו הופעה שאסור לפספס!\n' +
-                'הרכב קבוצת CHEERS:\n' +
-                '🎤 ארינה לייזר – שירה, כריזמה וקול עוצמתי שאי אפשר לשכוח!\n' +
-                '🥁 ווילי מרקוס - תופים שקובעים את הקצב לכל פעימת לב בחדר.\n' +
-                '🎸 אריק לייזר – בס שיוצר רעידות עמוקות שאי אפשר לעמוד בפניהן.\n' +
-                '🎸 יגאל שפיר – גיטרה, סולואים וירטואוזים וסאונד נפיץ.\n' +
-                '🎸 מיכאיל לייזרזון - גיטרה, אנרגיה ומנגינה שעושים לך עור ברווז.\n' +
-                'אנחנו Cheeers ואנחנו כאן כדי לפוצץ את הבמה ולתת לכם רגשות בלתי נשכחים! תתכוננו לערב שתזכרו שוב ושוב!',
-            date: '2025-03-21',
-            open: '20:00',
-            start: '21:00',
-            price: 70
-        },
-        {
+         {
             title: 'Stalkfish', image: 'stalkfish.jpg',
             descRu: 'Stalkfish - блюз-рок/фанк-группа из Иерусалима/Тель-Авива, которая исполняет преимущественно каверы SRV Jimmy Hendrix, Robben Ford, Robert Cray, как в акустической, так и в электрической версиях.',
             descEn: 'Stalkfish is a blues-rock/funk band from Jerusalem/Tel Aviv that primarily performs covers of SRV, Jimi Hendrix, Robben Ford, and Robert Cray, both in acoustic and electric versions.',
@@ -252,6 +182,58 @@ export const events =
                 '🎤 🎸 מיקי - שירה, גיטרה, בס\n' +
                 '🥁 איגור גרושבסקי (מתופף ותיק) - תופים',
             date: '2025-03-28',
+            open: '20:00',
+            start: '21:00',
+            price: 70
+        },
+        {
+            title: 'АлёнаDUST', image: 'alenaDUST.jpg',
+            descRu: 'Беер-Шевская кавер группа АлёнаDUST исполнит для вас качественный русский рок! Коллектив работает с 2012 года и за это время дал больше 300 концертов по всей стране!',
+            descEn: 'The Be\'er Sheva cover band AlёнаDUST will deliver high-quality Russian rock for you! The band has been performing since 2012 and has played over 300 concerts across the country!',
+            descHe: 'הלהקת קאברים מבאר-שבע "АлёнаDUST" תבצע עבורכם רוק רוסי איכותי! הלהקה פועלת מאז 2012 ונתנה יותר מ-300 הופעות ברחבי הארץ',
+            date: '2025-04-03',
+            open: '20:00',
+            start: '21:00',
+            price: 40
+        },
+        {
+            title: 'La Bella Cubana', image: 'laBellaCubana.jpg',
+            descRu: 'La Bella Cubana - Яна Мирабель Родригез и Джек Писак - если вам близка музыка латино, а испанская речь пробуждает в вас страсть, если вы хотели бы посетить Кубу, но пока не получилось - тогда вам сюда!!!',
+            descEn: 'La Bella Cubana – Yana Mirabel Rodriguez and Jack Pisak! If Latin music is close to your heart, if the Spanish language awakens passion in you, and if you\'ve always wanted to visit Cuba but haven\'t had the chance yet – then this is the place for you!',
+            descHe: 'La Bella Cubana – יאנה מיראבל רודריגז וג\'ק פיסאק!\n' +
+                'אם המוזיקה הלטינית קרובה ללבכם, אם השפה הספרדית מעוררת בכם תשוקה, ואם תמיד רציתם לבקר בקובה אבל עדיין לא יצא – זה המקום בשבילכם!',
+            date: '2025-04-04',
+            open: '20:00',
+            start: '21:00',
+            price: 70
+        },
+        {
+            title: 'Lazer Lloyd & Band', image: 'lazerLloyd.jpg',
+            descRu: 'Легендарный Лейзер Ллойд и его группа возвращаются в Беер-Шеву, чтобы погрузить вас в настоящий рок-н-ролл!!!\n' +
+                'Этот артист не нуждается в представлении, но если вдруг кто-то не знает о ком идет речь, то вот вам пару ссылок:\n' +
+                'https://www.lazerlloyd.live/\n' +
+                'https://en.wikipedia.org/wiki/Lazer_Lloyd',
+            descEn: 'The legendary Lazer Lloyd and his band are returning to Be\'er Sheva to immerse you in true rock \'n\' roll!!!\n' +
+                'This artist needs no introduction, but just in case someone doesn\'t know – here are a couple of links:\n' +
+                '🔗 https://www.lazerlloyd.live/\n' +
+                '🔗 https://en.wikipedia.org/wiki/Lazer_Lloyd"',
+            descHe: '\n' +
+                'הלהיט האגדי לייזר לויד והלהקה שלו חוזרים לבאר-שבע כדי להכניס אתכם לאווירת רוקנרול אמיתי!!!\n' +
+                'האמנית הזאת לא צריכה הצגה, אבל אם במקרה מישהו לא יודע על מי\n' +
+                ':מדובר, הנה לכם כמה קישורים\n' +
+                'https://www.lazerlloyd.live/\n' +
+                'https://en.wikipedia.org/wiki/Lazer_Lloyd',
+            date: '2025-04-10',
+            open: '20:00',
+            start: '21:00',
+            price: 70
+        },
+        {
+            title: 'Stav Fisher Blues Band', image: 'stavFisher.jpg',
+            descRu: 'Stav Fisher Blues Band - это коллектив, взорвавший блюзовую сцену в нашей стране за последний год, с успехом отметившись на престижных фестивалях и концертных площадках. Разнообразная, качественная программа, состоящая не только из традиционных блюзовых стандартов но и задорных рок-н-роллов, не оставит равнодушными не только любителей этого обширного жанра, но и людей с разнообразными музыкальными вкусами.',
+            descEn: 'Stav Fisher Blues Band is a group that has taken the blues scene in our country by storm over the past year, making a name for itself at prestigious festivals and concert venues. With a diverse, high-quality setlist featuring not only traditional blues standards but also energetic rock \'n\' roll tracks, this band will captivate not only blues enthusiasts but also music lovers of all kinds.',
+            descHe: 'Stav Fisher Blues Band הוא הרכב שכבש את סצנת הבלוז בארצנו בשנה האחרונה, וזכה להצלחה בפסטיבלים יוקרתיים ובמקומות הופעה נחשבים. עם רפרטואר מגוון ואיכותי הכולל לא רק סטנדרטים מסורתיים של בלוז אלא גם רוקנרול סוחף, הלהקה הזו תכבוש לא רק את אוהבי הז\'אנר אלא גם קהל עם טעמים מוזיקליים מגוונים.',
+            date: '2025-04-11',
             open: '20:00',
             start: '21:00',
             price: 70
